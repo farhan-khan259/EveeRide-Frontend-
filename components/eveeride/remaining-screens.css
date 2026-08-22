@@ -1,0 +1,935 @@
+.remaining-content {
+  padding-bottom: 120px;
+}
+.member-status,
+.white-panel,
+.invite-stats,
+.league-row,
+.rank-card,
+.deposit-step,
+.pool-detail-hero,
+.welcome-hero {
+  border-radius: 28px;
+}
+.member-status {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px;
+  background: linear-gradient(120deg, #071426, #103650);
+  color: white;
+}
+.member-status > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.member-status span,
+.white-panel > p,
+.leader-guide > p {
+  color: var(--muted-foreground);
+}
+.member-status b {
+  color: #27d678;
+  background: #075b49;
+  padding: 14px;
+  border-radius: 14px;
+}
+.white-panel {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 26px;
+}
+.white-panel h2 {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin: 0;
+}
+.promo-form > p {
+  margin: 0 0 22px 72px;
+}
+.promo-form input,
+.deposit-step > input {
+  width: 100%;
+  padding: 22px;
+  border: 2px solid var(--border);
+  border-radius: 22px;
+  font-size: 1.2rem;
+  outline: none;
+}
+.promo-form > button,
+.pay-button,
+.header-add,
+.mark-read {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px;
+  border: 0;
+  border-radius: 20px;
+  font-weight: 800;
+}
+.promo-form > button {
+  width: 100%;
+  margin-top: 18px;
+  background: #dfe1e5;
+  color: #a0a5ae;
+}
+.promo-form > button:not(:disabled) {
+  background: var(--green);
+  color: white;
+}
+.promo-form aside {
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #fff3bd;
+  color: #8b4c11;
+  font-weight: 800;
+}
+.progress-line {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+.progress-line > div {
+  grid-column: 1/-1;
+}
+.progress-line > b {
+  color: #3f80e5;
+}
+.header-add {
+  background: var(--green);
+  color: white;
+}
+.compact {
+  align-self: center;
+  width: min(280px, 100%);
+}
+.invite-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  overflow: hidden;
+}
+.invite-stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px 10px;
+  background: white;
+  text-align: center;
+}
+.invite-stats strong {
+  font-size: 1.25rem;
+}
+.invite-stats span {
+  color: var(--muted-foreground);
+}
+.step {
+  display: flex;
+  gap: 16px;
+  padding: 18px 0;
+}
+.step > b {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e0f8e9;
+  color: var(--green);
+}
+.step div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.step span {
+  color: var(--muted-foreground);
+}
+.rate-callout {
+  padding: 24px;
+  border-radius: 24px;
+  background: #fff8e6;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cohort-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #6e7682;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+.league-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.league-row {
+  display: grid;
+  grid-template-columns: 68px 80px 1fr auto;
+  gap: 18px;
+  align-items: center;
+  padding: 22px;
+  background: white;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 3%);
+}
+.league-row > b {
+  display: grid;
+  place-items: center;
+  height: 68px;
+  border-radius: 18px;
+  background: #071426;
+  color: white;
+  font-size: 1.3rem;
+}
+.league-row > span {
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #e2e5eb;
+  color: #29415e;
+  font-size: 1.5rem;
+}
+.league-row div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.league-row small {
+  color: var(--muted-foreground);
+}
+.league-row em {
+  color: #28b86c;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+}
+.tab-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid var(--border);
+}
+.tab-strip > * {
+  padding: 18px;
+  text-align: center;
+  color: #29b96b;
+}
+.tab-strip b {
+  border-bottom: 5px solid #071426;
+}
+.mark-read {
+  border: 2px solid #6e8396;
+  background: transparent;
+  color: white;
+}
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.notification {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  gap: 18px;
+  padding: 24px;
+  border: 2px solid #b9d6f7;
+  border-radius: 26px;
+  background: #eef6ff;
+}
+.notification:nth-child(2),
+.notification:nth-child(3) {
+  border-color: #b5e8cf;
+  background: #effcf5;
+}
+.notification div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.notification div span,
+.notification small {
+  color: var(--muted-foreground);
+  line-height: 1.5;
+}
+.notification b {
+  align-self: start;
+  padding: 10px;
+  border-radius: 10px;
+  background: #dbeafe;
+  color: #4381df;
+  font-size: 0.75rem;
+}
+.deposit-step {
+  padding: 26px;
+  background: white;
+  border: 1px solid var(--border);
+}
+.deposit-step h2 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 22px;
+}
+.deposit-step h2 > b {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--green);
+  color: white;
+}
+.method-grid,
+.amount-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.method-grid button,
+.amount-grid button {
+  padding: 30px 12px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: white;
+  font-weight: 800;
+}
+.amount-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.amount-grid button {
+  padding: 22px 8px;
+  color: var(--muted-foreground);
+}
+.deposit-step > input {
+  margin-top: 18px;
+}
+.pay-button {
+  width: 100%;
+  background: #d1d5dd;
+  color: #8c94a2;
+}
+.pay-button:not(:disabled) {
+  background: var(--green);
+  color: white;
+}
+.pool-detail-hero {
+  padding: 28px;
+  background: white;
+  border: 1px solid var(--border);
+}
+.pool-detail-hero > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+}
+.pool-detail-hero h2 {
+  font-size: 1.7rem;
+}
+.pool-detail-hero > div:first-child > b {
+  padding: 14px;
+  border-radius: 16px;
+  background: var(--green);
+  color: white;
+}
+.funding h2 {
+  justify-content: space-between;
+}
+.funding h2 > b {
+  color: var(--green);
+}
+.funding > p {
+  display: flex;
+  justify-content: space-between;
+}
+.funding > div:last-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.funding aside {
+  padding: 20px;
+  border-radius: 20px;
+  background: #eef4ff;
+  color: var(--muted-foreground);
+}
+.funding aside:last-child {
+  background: #fff9e9;
+}
+.funding aside strong {
+  display: block;
+  margin-top: 10px;
+  color: #3983e3;
+  font-size: 1.2rem;
+}
+.funding aside:last-child strong {
+  color: #e9b321;
+}
+.invest-button {
+  position: sticky;
+  bottom: 110px;
+  z-index: 2;
+  width: 100%;
+  box-shadow: 0 10px 22px rgb(0 0 0 / 16%);
+}
+.rank-card {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 24px;
+  border: 1px solid var(--border);
+  background: white;
+}
+.rank-card > span {
+  font-size: 2rem;
+}
+.rank-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.rank-card small {
+  color: var(--muted-foreground);
+}
+.rank-card p {
+  margin: 0;
+  color: #46ba7b;
+}
+.rank-card > b {
+  font-size: 1.3rem;
+}
+.rank-card > b small {
+  display: block;
+  font-size: 0.8rem;
+  text-align: right;
+}
+.commission-grid {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+}
+.commission-grid > div {
+  min-width: 145px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.commission-grid > div > b {
+  color: #42bb7c;
+}
+.commission-grid strong {
+  font-size: 1.8rem;
+}
+.commission-grid span,
+.commission-grid small {
+  color: var(--muted-foreground);
+}
+.team-empty {
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--muted-foreground);
+}
+.team-empty > svg {
+  font-size: 6rem;
+  color: #37da80;
+}
+.team-empty h2 {
+  color: var(--foreground);
+}
+.welcome-hero {
+  padding: 34px;
+  background: var(--navy);
+  color: white;
+}
+.welcome-hero h1 {
+  font-size: 2.6rem;
+}
+.welcome-hero p {
+  color: #adbac7;
+}
+.welcome-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+  border: 1px solid #3a5269;
+  border-radius: 22px;
+  overflow: hidden;
+}
+.welcome-stats > div {
+  padding: 18px 8px;
+  background: #17344e;
+}
+.welcome-stats strong {
+  color: #39d67a;
+  font-size: 1.1rem;
+}
+.welcome-stats span {
+  font-size: 0.72rem;
+  color: #aab7c5;
+}
+@media (max-width: 520px) {
+  .member-status {
+    padding: 16px;
+  }
+  .member-status span {
+    font-size: 0.78rem;
+  }
+  .member-status b {
+    padding: 10px;
+    font-size: 0.78rem;
+  }
+  .white-panel {
+    padding: 20px;
+  }
+  .promo-form > p {
+    margin-left: 0;
+  }
+  .league-row {
+    grid-template-columns: 46px 54px 1fr auto;
+    gap: 9px;
+    padding: 14px;
+  }
+  .league-row > b {
+    height: 46px;
+    font-size: 1rem;
+  }
+  .league-row > span {
+    width: 54px;
+    height: 54px;
+    font-size: 1.1rem;
+  }
+  .league-row strong {
+    font-size: 0.86rem;
+  }
+  .league-row em {
+    font-size: 1.1rem;
+  }
+  .league-row small {
+    font-size: 0.7rem;
+  }
+  .notification {
+    grid-template-columns: 52px 1fr auto;
+    padding: 16px;
+    gap: 10px;
+  }
+  .notification strong {
+    font-size: 0.86rem;
+  }
+  .notification div span {
+    font-size: 0.78rem;
+  }
+  .method-grid {
+    gap: 10px;
+  }
+  .method-grid button {
+    padding: 24px 8px;
+  }
+  .pool-detail-hero > div:first-child {
+    flex-direction: column;
+  }
+  .funding > p {
+    font-size: 0.75rem;
+  }
+  .funding > div:last-child {
+    gap: 8px;
+  }
+  .funding aside {
+    padding: 14px;
+    font-size: 0.75rem;
+  }
+  .funding aside strong {
+    font-size: 0.9rem;
+  }
+  .rank-card {
+    grid-template-columns: 42px 1fr auto;
+    padding: 16px;
+    gap: 10px;
+  }
+  .rank-card p {
+    font-size: 0.75rem;
+  }
+  .rank-card > b {
+    font-size: 1rem;
+  }
+  .welcome-hero {
+    padding: 22px;
+  }
+  .welcome-hero h1 {
+    font-size: 2rem;
+  }
+  .welcome-stats strong {
+    font-size: 0.8rem;
+  }
+  .welcome-stats span {
+    font-size: 0.6rem;
+  }
+}
+/* Compact, aligned league rows for both desktop and mobile. */
+.league-list {
+  gap: 10px;
+}
+.league-row {
+  grid-template-columns: 44px 48px minmax(0, 1fr) auto;
+  gap: 12px;
+  padding: 14px;
+  border-color: rgb(211 163 255 / 15%);
+  background: linear-gradient(145deg, rgb(21 0 80 / 94%), rgb(8 3 15 / 94%));
+  box-shadow: 0 12px 28px rgb(0 0 0 / 18%);
+}
+.league-row > b {
+  height: 44px;
+  border-radius: 12px;
+  background: #3f0071;
+  font-size: 0.9rem;
+}
+.league-row > span {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgb(188 112 238 / 18%);
+  color: #efdcfb;
+  font-size: 1rem;
+}
+.league-row div {
+  min-width: 0;
+  gap: 4px;
+}
+.league-row strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+.league-row small {
+  font-size: 0.76rem;
+}
+.league-row em {
+  color: #e1a9ff;
+  font-size: 1.05rem;
+}
+@media (max-width: 520px) {
+  .league-row {
+    grid-template-columns: 36px 42px minmax(0, 1fr) auto;
+    gap: 9px;
+    padding: 12px;
+  }
+  .league-row > b {
+    height: 36px;
+    border-radius: 10px;
+    font-size: 0.78rem;
+  }
+  .league-row > span {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+  }
+  .league-row strong {
+    font-size: 0.82rem;
+  }
+  .league-row small {
+    font-size: 0.66rem;
+  }
+  .league-row em {
+    font-size: 0.9rem;
+  }
+}
+
+/* Readable dark variants for the legacy remainder screens. */
+.commission-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  overflow: visible;
+}
+.commission-grid > div {
+  min-width: 0;
+  padding: 18px;
+  background: linear-gradient(145deg, rgb(21 0 80 / 96%), rgb(8 3 15 / 96%));
+  border-color: rgb(211 163 255 / 18%);
+  color: #f8f5ff;
+}
+.commission-grid > div > b {
+  color: #dda9ff;
+}
+.commission-grid strong {
+  color: #fff;
+  font-size: 1.45rem;
+}
+.commission-grid span,
+.commission-grid small {
+  color: #c7b9d5;
+}
+.notification {
+  grid-template-columns: 58px minmax(0, 1fr) auto;
+  gap: 14px;
+  padding: 18px;
+  border-color: rgb(211 163 255 / 22%);
+  background: linear-gradient(145deg, rgb(21 0 80 / 96%), rgb(8 3 15 / 96%));
+  box-shadow: 0 12px 28px rgb(0 0 0 / 18%);
+}
+.notification:nth-child(2),
+.notification:nth-child(3) {
+  border-color: rgb(211 163 255 / 22%);
+  background: linear-gradient(145deg, rgb(21 0 80 / 96%), rgb(8 3 15 / 96%));
+}
+.notification strong {
+  color: #fff;
+}
+.notification b {
+  background: rgb(188 112 238 / 18%);
+  color: #eac9ff;
+}
+.notification .icon-tile {
+  width: 58px;
+  height: 58px;
+}
+.rank-card {
+  background: linear-gradient(145deg, rgb(21 0 80 / 96%), rgb(8 3 15 / 96%));
+  border-color: rgb(211 163 255 / 18%);
+}
+.rank-card p {
+  color: #c7b9d5;
+}
+.rank-card > b {
+  color: #dda9ff;
+}
+.team-empty > svg {
+  color: #dda9ff;
+}
+.header-add {
+  min-width: 44px;
+  padding: 12px !important;
+  border-radius: 14px;
+}
+.mark-read {
+  min-height: 40px;
+  min-width: 180px;
+  padding: 8px 12px !important;
+  border-color: rgb(221 170 255 / 44%);
+}
+@media (max-width: 520px) {
+  .commission-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .commission-grid > div {
+    padding: 14px;
+  }
+  .commission-grid strong {
+    font-size: 1.2rem;
+  }
+  .notification {
+    grid-template-columns: 48px minmax(0, 1fr) auto;
+    padding: 14px;
+    gap: 10px;
+  }
+  .notification .icon-tile {
+    width: 48px;
+    height: 48px;
+  }
+  .notification b {
+    font-size: 0.64rem;
+    padding: 7px;
+  }
+  .mark-read {
+    font-size: 0.7rem;
+    max-width: 64px;
+    line-height: 1.1;
+  }
+}
+
+.remaining-content {
+  color: #f8f5ff;
+}
+.member-status,
+.white-panel,
+.invite-stats,
+.league-row,
+.rank-card,
+.deposit-step,
+.pool-detail-hero,
+.welcome-hero {
+  background: linear-gradient(145deg, rgb(21 0 80 / 96%), rgb(8 3 15 / 96%));
+  border: 1px solid rgb(211 163 255 / 18%);
+  box-shadow: 0 14px 34px rgb(0 0 0 / 24%);
+}
+.white-panel h2,
+.deposit-step h2,
+.rank-card strong,
+.league-row strong,
+.welcome-hero h1 {
+  color: #fff;
+}
+.white-panel > p,
+.leader-guide > p,
+.member-status span,
+.invite-stats span,
+.step span,
+.league-row small,
+.rank-card small,
+.rank-card p,
+.welcome-hero p,
+.salary-list small {
+  color: #c7b9d5;
+}
+.white-panel input,
+.deposit-step > input,
+.profile-form input,
+.security input {
+  background: rgb(255 255 255 / 6%);
+  border-color: rgb(221 170 255 / 28%);
+  color: #fff;
+}
+.white-panel input::placeholder,
+.deposit-step > input::placeholder,
+.profile-form input::placeholder,
+.security input::placeholder {
+  color: #9c8aaa;
+}
+.invite-stats > div,
+.profile-form p,
+.tab-strip > *,
+.filter-row > *,
+.confirm-sheet,
+.salary-list article,
+.reward-levels article {
+  background: rgb(255 255 255 / 5%);
+  color: #f8f5ff;
+}
+.promo-form aside,
+.rate-callout {
+  background: rgb(255 211 42 / 12%);
+  color: #ffe58a;
+  border: 1px solid rgb(255 211 42 / 22%);
+}
+.header-add,
+.support-empty button,
+.profile-form button,
+.security button,
+.primary-button,
+.pay-button {
+  background: linear-gradient(135deg, #8d2cc2, #610094);
+  box-shadow: 0 10px 24px rgb(97 0 148 / 32%);
+}
+.league-row > b,
+.league-row > span,
+.rank-card > span,
+.salary-list article > b,
+.reward-levels article > span {
+  background: rgb(97 0 148 / 45%);
+  color: #f4dfff;
+}
+.league-row em,
+.progress-line > b,
+.tab-strip > *,
+.rank-card > b {
+  color: #dda9ff;
+}
+.notification {
+  color: #f8f5ff;
+}
+.notification div {
+  min-width: 0;
+}
+.notification div span,
+.notification div small {
+  color: #c7b9d5;
+}
+.support-empty {
+  padding-top: 96px;
+  color: #f8f5ff;
+}
+.support-empty p {
+  color: #c7b9d5;
+}
+
+.deposit-step h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+      margin-bottom: 20px;
+}
+.deposit-step h2 > b {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  background: #8d2cc2;
+  color: #fff;
+}
+.method-grid,
+.amount-grid {
+  display: grid;
+  gap: 12px;
+}
+.method-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.amount-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.method-grid button,
+.amount-grid button {
+  min-height: 56px;
+  padding: 14px 10px;
+  border: 1px solid rgb(211 163 255 / 22%);
+  border-radius: 16px;
+  background: rgb(97 0 148 / 28%);
+  color: #f4e8ff;
+  font-weight: 750;
+}
+.method-grid button:hover,
+.amount-grid button:hover {
+  background: rgb(141 44 194 / 48%);
+  border-color: rgb(221 170 255 / 55%);
+}
+.deposit-step > input {
+  margin-top: 14px;
+  min-height: 54px;
+  padding: 15px 16px;
+  border-radius: 16px;
+  font-size: 1rem;
+}
+.pay-button {
+  width: 100%;
+  min-height: 56px;
+}
+@media (max-width: 520px) {
+  .method-grid,
+  .amount-grid {
+    gap: 10px;
+  }
+  .method-grid button,
+  .amount-grid button {
+    min-height: 52px;
+    padding: 12px 8px;
+    font-size: 0.82rem;
+  }
+}

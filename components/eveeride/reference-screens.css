@@ -1,0 +1,660 @@
+.community-head {
+  background: var(--navy);
+  color: white;
+  padding: 24px 32px 0;
+}
+.community-head > a {
+  font-size: 42px;
+  color: white;
+}
+.community-head h1 {
+  display: inline;
+  margin-left: 28px;
+  font-size: 34px;
+}
+.community-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 36px;
+}
+.community-tabs button {
+  background: none;
+  border: 0;
+  color: #9fa9b6;
+  padding: 18px 10px;
+  font-size: 18px;
+}
+.community-tabs .selected {
+  color: white;
+  font-weight: 700;
+  border-bottom: 4px solid #21c46b;
+}
+.community-body,
+.ref-content {
+  padding: 28px 32px;
+  background: #f8fafc;
+  min-height: calc(100vh - 180px);
+}
+.community-row,
+.group-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid #edf0f3;
+}
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: 700;
+}
+.navy {
+  background: #10283d;
+  color: white;
+}
+.orange {
+  background: #f8a10a;
+  color: white;
+}
+.purple {
+  background: #9250ef;
+  color: white;
+}
+.yellow {
+  background: #ffe04b;
+}
+.community-row div,
+.group-row div {
+  display: grid;
+  gap: 7px;
+  flex: 1;
+}
+.community-row strong,
+.group-row strong {
+  font-size: 21px;
+}
+.community-row small,
+.group-row small {
+  font-size: 16px;
+  color: #737a86;
+}
+.community-row mark {
+  background: #e6f8ed;
+  color: #27b96a;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.gray {
+  background: #e5e8ec !important;
+  color: #485569 !important;
+}
+.row-icon {
+  color: #23be68;
+  font-size: 24px;
+}
+.community-note {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #69727e;
+  padding-top: 22px;
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-heading > b,
+.see-all {
+  color: #27b96a;
+}
+.group-row button {
+  background: #22be62;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 20px;
+  font-weight: 700;
+  font-size: 17px;
+}
+.see-all {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 28px;
+}
+.achievement-card {
+  background: #0d293c;
+  color: #fff;
+  border-radius: 36px;
+  padding: 30px;
+  text-align: center;
+  display: grid;
+  gap: 20px;
+}
+.achievement-card header {
+  display: flex;
+  justify-content: space-between;
+}
+.achievement-card header strong,
+.achievement-card b {
+  color: #2bc66c;
+  letter-spacing: 3px;
+}
+.achievement-avatar {
+  margin: 28px auto 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 5px solid #24c86c;
+  background: #213f69;
+  color: #25bf68;
+  font-size: 72px;
+}
+.achievement-card h2 {
+  font-size: 28px;
+}
+.achievement-card p {
+  color: #b9c4d0;
+}
+.achievement-card label {
+  color: #2bc66c;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+.invite-code {
+  padding: 18px;
+  border: 2px solid #22985a;
+  border-radius: 20px;
+  font-size: 28px;
+}
+.customize-card,
+.about-card,
+.withdraw-card,
+.withdraw-step {
+  background: white;
+  border: 1px solid #e0e3e7;
+  border-radius: 28px;
+  padding: 28px;
+  margin-top: 24px;
+}
+.customize-card h2,
+.about-card h2 {
+  font-size: 24px;
+}
+.fake-input {
+  border: 2px solid #e1e3e7;
+  border-radius: 20px;
+  padding: 22px;
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+  font-size: 20px;
+}
+.green {
+  color: #20ba65;
+}
+.photo-button,
+.primary-action,
+.secondary-action {
+  width: 100%;
+  padding: 20px;
+  border-radius: 18px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 18px;
+}
+.photo-button,
+.secondary-action {
+  background: white;
+  border: 2px solid #2aa45e;
+  color: #218e53;
+}
+.primary-action {
+  background: #20c466;
+  border: 0;
+  color: white;
+}
+.about-card article {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.about-card article span {
+  color: #20be67;
+  background: #e9f9ef;
+  border-radius: 16px;
+  padding: 14px;
+  height: max-content;
+}
+.about-card article p {
+  color: #737a86;
+  line-height: 1.5;
+}
+.contact-card p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+.contact-card p svg {
+  color: #3d83db;
+  margin-right: 10px;
+}
+.ref-content > footer {
+  text-align: center;
+  color: #a5abb4;
+  padding: 30px;
+}
+.balance-grid,
+.withdraw-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.balance-grid > div {
+  background: #263b4e;
+  color: #d7dde4;
+  border-radius: 22px;
+  padding: 24px;
+  font-size: 17px;
+}
+.balance-grid strong,
+.withdraw-grid strong {
+  display: block;
+  color: white;
+  font-size: 28px;
+  margin-top: 10px;
+}
+.withdraw-summary {
+  background: #edf5ff;
+  padding: 24px;
+  border-radius: 22px;
+  display: flex;
+  gap: 18px;
+  color: #3d7fd7;
+  font-size: 24px;
+}
+.withdraw-summary div {
+  flex: 1;
+  font-size: 17px;
+  color: #6d7783;
+}
+.withdraw-summary strong {
+  display: block;
+  font-size: 24px;
+  color: #397cd0;
+}
+.withdraw-grid {
+  margin-top: 22px;
+}
+.withdraw-grid > div {
+  padding: 22px;
+  border-radius: 20px;
+  background: #edf9f1;
+  color: #24b668;
+  display: flex;
+  gap: 14px;
+}
+.withdraw-grid span {
+  color: #737a86;
+}
+.withdraw-grid strong {
+  color: #101826;
+  font-size: 20px;
+}
+.warning,
+.success,
+.withdraw-step > p {
+  padding: 20px;
+  border-radius: 18px;
+    margin: 20px;
+  line-height: 1.5;
+}
+.warning {
+  background: #fff4ec;
+  color: #dc7a2f;
+}
+.success {
+  background: #edfff2;
+  color: #27ae62;
+}
+.withdraw-step h2 {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.withdraw-step h2 b {
+  background: #f87512;
+  color: white;
+  border-radius: 50%;
+  padding: 12px 16px;
+}
+.withdraw-step input {
+  width: 100%;
+  padding: 22px;
+  border: 2px solid #e0e3e7;
+  border-radius: 18px;
+  font-size: 20px;
+  margin-top: 18px;
+}
+.no-account {
+  background: #fff5bd;
+  padding: 28px;
+  text-align: center;
+  display: grid;
+  gap: 14px;
+  border-radius: 20px;
+  color: #a55a1a;
+  font-size: 22px;
+}
+.no-account span {
+  font-size: 16px;
+}
+.no-account button {
+  background: #ff7414;
+  color: white;
+  border: 0;
+  border-radius: 16px;
+  padding: 16px;
+  font-size: 19px;
+  font-weight: 700;
+}
+.team-reward-card,
+.dashboard-stats,
+.pool-mini {
+  border: 1px solid #e0e3e7;
+  border-radius: 22px;
+  padding: 24px;
+}
+.dashboard-stats {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+.dashboard-stats b {
+  flex: 1;
+  font-size: 24px;
+}
+.dashboard-stats small {
+  display: block;
+  color: #737a86;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.pool-mini {
+  display: grid;
+  gap: 12px;
+}
+.pool-mini span {
+  color: #23bd68;
+}
+@media (max-width: 600px) {
+  .community-head {
+    padding: 18px 20px 0;
+  }
+  .community-head h1 {
+    font-size: 28px;
+  }
+  .community-body,
+  .ref-content {
+    padding: 22px 16px;
+  }
+  .achievement-card {
+    padding: 22px;
+    border-radius: 28px;
+  }
+  .balance-grid {
+    gap: 10px;
+  }
+  .balance-grid > div {
+    padding: 16px;
+    font-size: 14px;
+  }
+  .balance-grid strong {
+    font-size: 22px;
+  }
+  .withdraw-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .withdraw-grid > div {
+    padding: 14px;
+    font-size: 15px;
+  }
+  .withdraw-grid strong {
+    font-size: 17px;
+  }
+  .withdraw-card,
+  .withdraw-step,
+  .customize-card,
+  .about-card {
+    padding: 20px;
+  }
+  .dashboard-stats b {
+    font-size: 18px;
+  }
+}
+/* Community now uses the shared page header and app color system. */
+.community-body {
+  padding: 0 !important;
+  background: transparent !important;
+  min-height: 0 !important;
+}
+.community-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  justify-content: initial;
+  margin: 0 0 14px;
+  padding: 5px;
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 16px;
+  background: rgb(255 255 255 / 5%);
+}
+.community-tabs button {
+  min-height: 42px;
+  padding: 8px;
+  border: 0;
+  border-radius: 11px;
+  background: transparent;
+  color: #c7b9d5;
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+.community-tabs .selected {
+  color: #fff;
+  border: 0;
+  background: linear-gradient(135deg, #610094, #3f0071);
+}
+.community-row,
+.group-row {
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid rgb(211 163 255 / 15%);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgb(21 0 80 / 94%), rgb(8 3 15 / 94%));
+}
+.group-row {
+  margin-top: 10px;
+}
+.community-row strong,
+.group-row strong {
+  font-size: 1rem;
+}
+.community-row small,
+.group-row small {
+  font-size: 0.82rem;
+  color: #c7b9d5;
+}
+.community-note {
+  margin: 0;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgb(63 0 113 / 24%);
+  color: #d9c8e8;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.avatar {
+  width: 48px;
+  height: 48px;
+  font-size: 1.05rem;
+}
+.navy,
+.orange,
+.purple,
+.yellow {
+  background: linear-gradient(135deg, #610094, #3f0071);
+  color: #fff;
+}
+.row-icon {
+  color: #dda9ff;
+  font-size: 1.1rem;
+}
+.community-row mark {
+  background: rgb(188 112 238 / 18%);
+  color: #e5b7ff;
+  padding: 4px 6px;
+  font-size: 0.65rem;
+}
+.group-row button {
+  background: #3f0071;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+}
+
+.ref-content {
+  color: #f8f5ff;
+  background: transparent;
+}
+.achievement-card,
+.customize-card,
+.about-card,
+.withdraw-card,
+.withdraw-step {
+  background: linear-gradient(145deg, rgb(21 0 80 / 96%), rgb(8 3 15 / 96%));
+  border: 1px solid rgb(211 163 255 / 18%);
+  box-shadow: 0 14px 34px rgb(0 0 0 / 24%);
+}
+.achievement-card p,
+.customize-card p,
+.about-card p,
+.withdraw-step > p,
+.contact-card p,
+.withdraw-summary div,
+.withdraw-grid span {
+  color: #c7b9d5;
+}
+.achievement-card h2,
+.customize-card h2,
+.about-card h2,
+.withdraw-step h2,
+.contact-card strong {
+  color: #fff;
+}
+.fake-input {
+  background: rgb(255 255 255 / 6%);
+  border-color: rgb(221 170 255 / 28%);
+  color: #f8f5ff;
+  align-items: center;
+  min-height: 56px;
+}
+.balance-grid > div,
+.withdraw-grid > div {
+  background: rgb(97 0 148 / 34%);
+  border: 1px solid rgb(211 163 255 / 18%);
+  color: #c7b9d5;
+}
+.balance-grid strong,
+.withdraw-grid strong {
+  color: #fff;
+}
+.withdraw-summary {
+  background: rgb(63 0 113 / 40%);
+  color: #efcfff;
+  border: 1px solid rgb(211 163 255 / 18%);
+}
+.warning {
+  background: rgb(205 92 126 / 13%);
+  color: #f3b7ca;
+   margin-top: 20px;
+  border: 1px solid rgb(205 92 126 / 24%);
+}
+.success {
+  background: rgb(32 197 105 / 13%);
+  color: #9ff1c0;
+
+  border: 1px solid rgb(32 197 105 / 24%);
+}
+.primary-action,
+.secondary-action {
+      color: #fff;
+    display: flex;
+    background: linear-gradient(135deg, #8d2cc2, #610094);
+    border: 1px solid #d3a3ff38;
+    box-shadow: 0 10px 24px #61009447;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.secondary-action {
+  background: rgb(97 0 148 / 30%);
+}
+.balance-grid,
+.withdraw-grid {
+  gap: 12px;
+}
+.balance-grid > div,
+.withdraw-grid > div {
+  min-width: 0;
+  border-radius: 18px;
+}
+.withdraw-step h2 {
+  margin: 0;
+  color: #fff;
+}
+.withdraw-step h2 b {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  flex: 0 0 auto;
+  background: #8d2cc2;
+}
+.withdraw-step input {
+  margin-top: 16px;
+  min-height: 54px;
+  padding: 15px 16px;
+  border-radius: 16px;
+  background: rgb(255 255 255 / 6%);
+  border-color: rgb(221 170 255 / 28%);
+  color: #fff;
+}
+.withdraw-step input::placeholder {
+  color: #9c8aaa;
+}
+.no-account {
+  background: rgb(141 44 194 / 14%);
+  border: 1px solid rgb(211 163 255 / 24%);
+  color: #f1d8ff;
+}
+.no-account span {
+  color: #c7b9d5;
+}
+.balance-grid > div > svg, .withdraw-summary > svg, .withdraw-grid > div > svg, .warning > svg, .success > svg, .no-account > svg, .primary-action > svg { flex: 0 0 auto; color: #dda9ff; }
+.warning > svg, .success > svg { margin-right: 8px; }
+.warning, .success { display: flex; align-items: flex-start; gap: 8px; margin: 20px 0; }
+.withdraw-grid > div { align-items: flex-start; }
+.no-account > svg { margin: 0 auto; font-size: 1.5rem; }
+.balance-grid > div > svg { margin-right: 6px; }
+.no-account button {
+  background: linear-gradient(135deg, #8d2cc2, #610094);
+  box-shadow: 0 8px 18px rgb(97 0 148 / 28%);
+}
